@@ -1,0 +1,34 @@
+<style webc:scoped>
+:host {
+	--people-card-spacing: .25em;
+	display: inline-flex;
+	gap: .75em;
+	align-items: center;
+	text-decoration: none;
+	border: 2px solid;
+	padding: var(--people-card-spacing) 1em var(--people-card-spacing) calc(var(--people-card-spacing) * 2.5);
+	margin-bottom: .2em;
+	border-radius: .5em;
+	font-weight: 700;
+	border-radius: 55px;
+}
+:host:hover,
+:host:active {
+	background-color: rgba(0,0,0,.04);
+}
+:host span {
+	border-radius: 50%;
+	font-size: 31.25px;
+	line-height: 32px;
+	max-width: 2em;
+}
+</style>
+<!-- _components/favicon-link.webc with emoji instead of favicon -->
+<a webc:root="override">
+	<script webc:type="js" webc:raw>
+	let label = emojiShortName(emoji);
+	// see _components/accessible-emoji.webc
+	`<span role="img" aria-label="${label}">${emoji}</span>`
+	</script>
+	<slot></slot>
+</a>
