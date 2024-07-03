@@ -1,23 +1,27 @@
 {
-	"name": "@11ty/tugboat",
+	"name": "@famebot/donut",
 	"version": "1.0.0",
-	"description": "A modern starter project using Eleventy and WebC.",
+	"description": "Experimental add-ons to @11ty/tugboat, a modern starter project using Eleventy and WebC",
 	"type": "module",
 	"scripts": {
 		"build": "npx @11ty/eleventy",
 		"start": "npx @11ty/eleventy --serve --quiet --incremental",
+		"d": "npx @11ty/eleventy --serve --quiet --incremental",
 		"debug": "DEBUG=Eleventy* npx @11ty/eleventy",
 		"benchmark": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/11ty/tugboat.git"
+		"url": "git+https://github.com/rdela/tugboat.git"
 	},
 	"author": {
 		"name": "Zach Leatherman",
 		"email": "zachleatherman@gmail.com",
 		"url": "https://zachleat.com/"
 	},
+	"contributors": [
+		"Ricky de Laveaga (https://rdela.com)"
+	],
 	"license": "MIT",
 	"engines": {
 		"node": ">=18"
@@ -29,7 +33,7 @@
 	"bugs": {
 		"url": "https://github.com/11ty/tugboat/issues"
 	},
-	"homepage": "https://github.com/11ty/tugboat#readme",
+	"homepage": "https://github.com/rdela/tugboat/tree/donut",
 	"devDependencies": {
 		"@11ty/eleventy": "3.0.0-alpha.14",
 		"@11ty/eleventy-img": "^4.0.2",

@@ -2,13 +2,25 @@
 let layout = "layouts/base.webc";
 // Hi
 ---
-<h1>Welcome to Tugboat <accessible-emoji emoji="🛟"></accessible-emoji></h1>
+<h1>Welcome to Donut <accessible-emoji emoji="🛟"></accessible-emoji></h1>
 
 <p @text="pkg.description"></p>
 
+<a webc:is="emoji-link" href="https://tugboat.11ty.dev/" emoji="🛟">Tugboat</a>
+
 <h2>Features</h2>
 
-<p>Bundled WebC components:</p>
+<h3>Donut Features</h3>
+
+<p>Donut Bundled WebC components:</p>
+
+<ul>
+	<li><accessible-emoji emoji="🖇️"></accessible-emoji> <code>emoji-link</code> will show a screen-reader friendly emoji in an external link.</li>
+</ul>
+
+<h3>Tugboat Features</h3>
+
+<p>Tugboat Bundled WebC components:</p>
 
 <ul>
 	<li><accessible-emoji emoji="🏝"></accessible-emoji> <code>is-land</code> <em>(client-JavaScript)</em> to use Islands architecture to control how components load and initialize (using <a href="https://www.11ty.dev/docs/plugins/partial-hydration/"><code>@11ty/is-land</code></a>)</li>
@@ -24,7 +36,30 @@ let layout = "layouts/base.webc";
 
 <h2>Demos</h2>
 
-<h3>Fancy Links</h3>
+<h3>Donut Demos</h3>
+
+<h4>Emoji Links</h4>
+
+<p>Use the <code>emoji-link</code> component to easily show a link with an emoji shown alongside the content.</p>
+
+<live-demo>
+<a webc:is="emoji-link" href="https://tugboat.11ty.dev/" emoji="🛟">Tugboat</a>
+<a webc:is="emoji-link" href="https://www.11ty.dev/" emoji="🎈">Eleventy</a>
+<a webc:is="emoji-link" href="https://conf.11ty.dev/" emoji="🎉">Conference</a>
+<a webc:is="emoji-link" href="https://merch.11ty.dev/" emoji="🛍️">Merch</a>
+<a webc:is="emoji-link" href="https://www.11ty.dev/docs/api-services/" emoji="⚙️">API Services</a>
+<a webc:is="emoji-link" href="https://api-explorer.11ty.dev/" emoji="🧭">API Explorer</a>
+<a webc:is="emoji-link" href="https://www.11ty.dev/docs/services/screenshots/" emoji="📺">Screenshots</a>
+<a webc:is="emoji-link" href="https://www.11ty.dev/docs/services/opengraph/" emoji="👤">OpenGraph Image</a>
+<a webc:is="emoji-link" href="https://www.11ty.dev/docs/services/indieweb-avatar/" emoji="👥">IndieWeb Avatars</a>
+<a webc:is="emoji-link" href="https://www.11ty.dev/docs/services/generator/" emoji="🛠️">Generator Image</a>
+<a webc:is="emoji-link" href="https://www.11ty.dev/docs/services/builtwith/" emoji="📡">Hosting Image</a>
+<a webc:is="emoji-link" href="https://www.11ty.dev/docs/services/sparklines/" emoji="📈">11ty Sparklines</a>
+</live-demo>
+
+<h3>Tugboat Demos</h3>
+
+<h4>Fancy Links</h4>
 
 <p>Use the <code>favicon-link</code> component to easily show a link with a favicon image shown alongside the content.</p>
 
@@ -40,14 +75,14 @@ let layout = "layouts/base.webc";
 <a webc:is="favicon-link" href="https://www.sarasoueidan.com/">Sara Soueidan</a>
 </live-demo>
 
-<h3>Dark/Light Mode</h3>
+<h4>Dark/Light Mode</h4>
 
 <live-demo @wrap>
 <color-schemer></color-schemer>
 <p>Note that this value is synchronized with all other color-schemer instances on the page (there’s another one in the footer).</p>
 </live-demo>
 
-<h3>Time Difference</h3>
+<h4>Time Difference</h4>
 
 <p>The <code>time-difference</code> component shows the difference between a date/time and now in the user’s local time zone.</p>
 
@@ -57,7 +92,7 @@ let layout = "layouts/base.webc";
 </p>
 </live-demo>
 
-<h3>Islands Architecture</h3>
+<h4>Islands Architecture</h4>
 
 <p>Use islands architecture to “hydrate” components that use client-side JavaScript when conditions are met. This island initializes a <code>time-difference</code> web component when the island is visible:</p>
 
@@ -80,7 +115,7 @@ let layout = "layouts/base.webc";
 </p>
 </live-demo>
 
-<h3>Image Optimization</h3>
+<h4>Image Optimization</h4>
 
 <p>A very large <code>1600×1200</code> source image has been downscaled to <code>400w</code> and <code>800w</code> output sizes in three separate image formats (<code>avif</code>, <code>webp</code>, and <code>jpeg</code>). The image component includes the <code>width</code> and <code>height</code> attributes to eliminate <a href="https://web.dev/cls/">Content Layout Shift</a>, decides whether the <code>picture</code> syntax is necessary, and generates optimal markup using <code>srcset</code>.</p>
 
@@ -91,7 +126,7 @@ let layout = "layouts/base.webc";
 </live-demo>
 
 
-<h3>Syntax Highlighting</h3>
+<h4>Syntax Highlighting</h4>
 
 <p>Here’s some server-rendered (no client-JavaScript) syntax highlighted code:</p>
 
@@ -139,7 +174,7 @@ let layout = "layouts/base.webc";
 </pre>
 </live-demo>
 
-<h3>Accessible Emoji</h3>
+<h4>Accessible Emoji</h4>
 
 <live-demo>
 <accessible-emoji emoji="✅"></accessible-emoji>

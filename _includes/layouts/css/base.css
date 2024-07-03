@@ -1,15 +1,15 @@
 :root {
 	--font-family: system-ui, sans-serif;
 	--background-color: #fff;
-	--color-accent: #c0481d;
-	--text-color: #333;
-	--text-color-link: #082840;
+	--color-accent: hsl(320, 96%, 64%); /* hsl(304, 72%, 56%); #c0481d */
+	--text-color: hsl(320, 24%, 16%); /* #333 */
+	--text-color-link: hsl(320, 76%, 16%); /* #082840 */
 	--text-color-link-active: var(--color-accent);
 	color-scheme: light;
 }
 :root:where(.theme-dark) {
-	--background-color: #15202b;
-	--color-accent: #1493fb;
+	--background-color: hsl(20, 32%, 12%); /* #15202b */
+	--color-accent: hsl(20, 96%, 56%); /* #1493fb */
 	--text-color: #dad8d8;
 	--text-color-link: inherit;
 	--text-color-link-active: var(--color-accent);
