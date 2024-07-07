@@ -23,11 +23,11 @@
 	max-width: 2em;
 }
 </style>
-<!-- _components/favicon-link.webc with emoji instead of favicon -->
+<!--- _components/favicon-link.webc with emoji instead of favicon --->
 <a webc:root="override">
+	<!--- see _components/accessible-emoji.webc --->
 	<script webc:type="js" webc:raw>
 	let label = emojiShortName(emoji);
-	// see _components/accessible-emoji.webc
 	`<span role="img" aria-label="${label}">${emoji}</span>`
 	</script>
 	<slot></slot>
