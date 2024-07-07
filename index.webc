@@ -8,6 +8,8 @@ let layout = "layouts/base.webc";
 
 <a webc:is="emoji-link" href="https://tugboat.11ty.dev/" emoji="🛟">Tugboat</a>
 
+<a webc:is="emoji-link" href="https://github.com/rdela/tugboat/tree/donut/" emoji="🍩">Donut</a>
+
 <h2>Features</h2>
 
 <h3>Donut Features</h3>
