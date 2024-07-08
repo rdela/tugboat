@@ -52,8 +52,8 @@ let layout = "layouts/base.webc";
 <a webc:is="emoji-link" href="https://www.11ty.dev/docs/api-services/" @emoji="⚙️">API Services</a>
 <a webc:is="emoji-link" href="https://api-explorer.11ty.dev/" @emoji="🧭">API Explorer</a>
 <a webc:is="emoji-link" href="https://www.11ty.dev/docs/services/screenshots/" @emoji="📺">Screenshots</a>
-<a webc:is="emoji-link" href="https://www.11ty.dev/docs/services/opengraph/" @emoji="👤">OpenGraph Image</a>
-<a webc:is="emoji-link" href="https://www.11ty.dev/docs/services/indieweb-avatar/" @emoji="👥">IndieWeb Avatars</a>
+<a webc:is="emoji-link" href="https://www.11ty.dev/docs/services/opengraph/" @emoji="🖼️">OpenGraph Image</a>
+<a webc:is="emoji-link" href="https://www.11ty.dev/docs/services/indieweb-avatar/" @emoji="🪪">IndieWeb Avatars</a>
 <a webc:is="emoji-link" href="https://www.11ty.dev/docs/services/generator/" @emoji="🛠️">Generator Image</a>
 <a webc:is="emoji-link" href="https://www.11ty.dev/docs/services/builtwith/" @emoji="📡">Hosting Image</a>
 <a webc:is="emoji-link" href="https://www.11ty.dev/docs/services/sparklines/" @emoji="📈">11ty Sparklines</a>
