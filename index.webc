@@ -7,8 +7,8 @@ let layout = "layouts/base.webc";
 <p @text="pkg.description"></p>
 
 <a webc:is="emoji-link" href="https://tugboat.11ty.dev/" emoji="🛟">Tugboat</a>
-
 <a webc:is="emoji-link" href="https://github.com/rdela/tugboat/tree/donut/" emoji="🍩">Donut</a>
+<a webc:is="emoji-link" href="https://github.com/11ty/tugboat/issues/8" emoji="💬">Comments</a>
 
 <h2>Features</h2>
 
