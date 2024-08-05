@@ -2,7 +2,7 @@
 let layout = "layouts/base.webc";
 // Hi
 ---
-<h1>Welcome to Donut <accessible-emoji emoji="🛟"></accessible-emoji></h1>
+<h1>Welcome to Donut <accessible-emoji emoji="🛟" alt="life preserver"></accessible-emoji></h1>
 
 <p @text="pkg.description"></p>
 
